@@ -14,16 +14,16 @@ const Counter = () => {
     }
 
   return (
-    <section>
-        <p>{count}</p>
-        <div>
+    <section className='sect__one'>
+        <p className='sect__one__p'>{count}</p>
+        <div className='sect__one__item_one'>
             <button onClick={() => dispatch(increment())}>+</button>
             <button onClick={() => dispatch(decrement())}>-</button>
             </div>
-        <input type="text" value={incrementAmount}
+        <input className='sect__one__input' type="text" value={incrementAmount}
         onChange={(e) => setIncrementAmount(e.target.value)} />
 
-            <div>
+            <div className='sect__one__item__two'>
             <button onClick={() => dispatch(incrementByAmount(addValue))}>Add Amount</button>
             <button onClick={resetAll}>Reset</button>
             </div>
